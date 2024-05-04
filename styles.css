@@ -1,0 +1,74 @@
+body, html {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/Merienda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 3em;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-bottom: 50px;
+    color: #BDA523;
+    text-shadow: 4px 4px 8px rgba(202, 158, 114, 0.432);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #CC8D1A;
+    /* text-shadow: 4px 4px 8px rgb(77, 76, 75); */
+    animation: floatAnimation 3s infinite alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+#countdown {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+#countdown div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgba(255, 145, 0, 0.308);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: antiquewhite;
+    font-size: large;
+}
